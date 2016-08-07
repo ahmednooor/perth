@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perth Html</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700i" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+</head>
+
+<body>
+
+
+    <section class="navigation" id="navigation">
+        <ul>
+            <li><a id="closeIcon">X</a></li>
+            <li><a id="n1" href="#intro">About</a></li>
+            <li><a id="n2" href="#portfolio">Portfolio</a></li>
+            <li><a id="n3" href="#donate">Donate</a></li>
+            <li><a id="n4" href="#contact">Contact</a></li>
+        </ul>
+    </section>
+
+    <div class="upIcon">
+        <a href="#banner">▲</a>
+    </div>
+
+    <section class="banner" id="banner">
+        <div class="wrapper bannerContent">
+
+            <header>
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+
+                <nav id="menuIcon">
+                    <a>
+                        <img src="images/ham.png" alt="menu">
+                    </a>
+                </nav>
+            </header>
+
+            <div class="bannerText">
+                <div class="meetperth">
+                    <img src="images/meetperth.png" alt="Meet Perth">
+                </div>
+                <p>A stupidly simple, flat PSD. Oh yeah, it's <span>free</span> too!</p>
+                <a href="#" class="btn">DOWNLOAD</a>
+            </div>
+
+            <div class="iphone5">
+                <img src="images/iphone5.png" alt="iphone5">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="intro" id="intro">
+        <div class="wrapper introText">
+            <h2>A Longwinded Header</h2>
+            <p>She'll be right paddock how lets throw a ciggies. She'll be right ute to built like a doovalacky. We're going rack off bloody she'll be right pash. You little ripper tucker also get a dog up ya greenie.</p>
+            <blockquote>You little ripper boozer no worries she'll be right holy dooley!. Come a freo also as cross as a your shout. Lets throw a khe sanh flamin dead dingo's donger. Lets get some fisho with grab us a trackie dacks.</blockquote>
+            <a href="#" class="btn">SAY HELLO</a>
+        </div>
+
+        <div class="introBG">
+            <img src="images/ipad.png" alt="ipad">
+        </div>
+
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="wrapper">
+            <div class="portfolioText">
+                <h2>Get a Dog Up Ya'</h2>
+                <p>She'll be right paddock how lets throw a ciggies.<br>
+                    She'll be right ute to built like a doovalacky.</p>
+                <p>We're going rack off bloody she'll be right pash. You little ripper tucker also get a dog up ya greenie.</p>
+                <a href="#" class="btn">VIEW ON DRIBBBLE</a>
+            </div>
+        </div>
+
+
+        <div class="portfolioBG">
+            <img src="images/devices.png" alt="devices">
+        </div>
+    </section>
+
+    <section class="donate" id="donate">
+        <div class="wrapper">
+            <h2>Like What You See?</h2>
+            <a href="#" class="btn">BUY ME A <em><b>COFFEE?</b></em></a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="wrapper cf">
+            <ul>
+                <li><a href="#"><img src="images/social-Icons/Behance.png" alt="behance"></a></li>
+                <li><a href="#"><img src="images/social-Icons/Codepen.png" alt="codepen"></a></li>
+                <li><a href="#"><img src="images/social-Icons/Dribbble.png" alt="dribbble"></a></li>
+                <li><a href="#"><img src="images/social-Icons/Facebook.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="images/social-Icons/Twitter.png" alt="twitter"></a></li>
+            </ul>
+
+            <form action="#">
+                <label><em><b>Newsletter Subscription</b></em></label>
+                <input type="email" placeholder="Enter Email"><button type="submit"><img src="images/envelope.png" alt=""></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2013 <span>Perth.</span><em> Breeding pixels since the naughties.</em></p>
+    </footer>
+
+
+
+    <script>
+        window.onload = function() {
+            var menu = document.getElementById('menuIcon'),
+                close = document.getElementById('closeIcon'),
+                n1 = document.getElementById('n1'),
+                n2 = document.getElementById('n2'),
+                n3 = document.getElementById('n3'),
+                n4 = document.getElementById('n4'),
+                navigation = document.getElementById('navigation');
+
+            function showmenu() {
+                navigation.className = 'navigation active';
+            }
+            function hidemenu() {
+                navigation.className = 'navigation';
+            }
+
+            menu.onclick = showmenu;
+            close.onclick = hidemenu;
+            n1.onclick = hidemenu;
+            n2.onclick = hidemenu;
+            n3.onclick = hidemenu;
+            n4.onclick = hidemenu;
+        }
+    </script>
+</body>
+</html>
